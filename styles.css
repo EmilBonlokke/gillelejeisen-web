@@ -1,0 +1,347 @@
+html {
+  background: #FFFCE5;
+}
+
+body {
+  font-family: 'PT Sans', Helvetica, sans-serif;
+  background: #FFFCE5;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+header, footer {
+  background: #69C4ED;
+  color: white;
+  padding: 20px 20px;
+}
+
+
+.menutext{
+  font-size: 24px;
+
+}
+
+input[type="search"] {
+  width: 100%;
+}
+
+.starttext{
+  text-align: left;
+  margin-left: auto;
+  color: #69C4ED;
+  padding-left: 15px;
+}
+.velkommen{
+  color: #69C4ED;
+}
+
+.highlight{
+  color: #EE747F;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  line-height: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #EE747F;
+}
+
+header li {
+  display: inline;
+}
+
+header h1, nav {
+  display: inline-block;
+}
+
+header h1 {
+  width: 100%;
+}
+
+.footr{
+  text-align: right;
+  float: left;
+}
+
+
+
+.product {
+  box-sizing: border-box;
+  /* width: 30%; */
+  margin: 5px;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.voresistext{
+  font-size: 18px;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.voresistext2{
+  font-size: 24px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.button {
+  padding: 10px;
+  display: inline-block;
+}
+
+.button:last-of-type {
+  background: #69C4ED;
+  color: white;
+}
+
+/* Merchandise detail */
+.product-detail {
+  width: 660px;
+}
+
+.product-detail img {
+  max-width: 50%;
+  float: left;
+}
+
+/* Kontakt */
+form {
+  padding: 10px;
+  margin: 10px 0;
+  width: 600px;
+}
+
+form > div {
+  margin: 10px 0;
+}
+
+.inline label {
+  display: inline-block;
+  width: 100px;
+
+}
+
+.inline{
+
+}
+
+input[type="text"], input[type="email"], textarea {
+  padding: 10px;
+  width: 400px;
+}
+
+/* Table */
+table {
+  width: 400px;
+  text-align: left;
+  margin: 20px 0;
+}
+
+caption {
+  font-weight: bold;
+  font-style: italic;
+  border-bottom: 1px dotted;
+  padding: 10px; 
+}
+
+th, td {
+  padding: 10px;
+}
+
+tr:hover {
+  background: #f5f5f5;
+}
+
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px dimgrey;
+  border-radius: 3px;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+.checkout {
+  padding: 5px 20px 15px 20px;
+  border-radius: 3px; }
+
+/*kundeklub med grid*/
+.grid div{
+  text-align: center;
+  padding: 1rem;
+}
+
+#topbox{background-color: #68aed7}
+#header{background-color: #69C4ED}
+#content{background-color: #fffce5}
+#feature1{background-color: #FFFCE5}
+#feature2{background-color: #FFFCE5}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(50px, auto);
+  grid-row-gap: 1rem;
+}
+
+  #topbox{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+
+  #header{
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
+
+  #content{
+    grid-column: 1/-1;
+    grid-row: 3/4;
+  }
+
+.login{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+@media screen and (min-width: 800px) {
+
+  input[type="search"] {
+    width: 40%;
+    margin-left: 2em;
+  }
+
+  input[type="text1"]{
+    width: 40%;
+    margin-left: 2em;
+  }
+
+  .product {
+    display: inline-block;
+    width: 48%;
+  }
+
+  footer {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .footr {
+    text-align: right;
+    float: left;
+  }
+
+  .contactforms {
+    padding-left: 19%;
+  }
+
+  .footl {
+    text-align: left;
+  }
+
+  .starttext{
+    padding-right: 15px;
+  }
+
+
+}
+
+
+
+@media screen and (min-width: 1000px) {
+  body {
+    text-align: left;
+  }
+
+  header h1 {
+    width: 60%;
+  }
+
+  main {
+    width: 68%;
+    display: inline-block;
+    padding: 10px;
+  }
+
+  aside {
+    width: 27%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+  }
+
+  .footr {
+    text-align: right;
+    float: left;
+  }
+
+  .contactforms{
+    padding-left: 10px;
+
+  }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+  body {
+    max-width: 80vw;
+  }
+
+  .product {
+    width: 30%;
+  }
+
+  .contactforms{
+    padding-left: 5px;
+  }
+
+  input[type="search"] {
+    width: 20%;
+  }
+
+  .footr {
+    text-align: right;
+    float: left;
+  }
+
+
+header, footer {
+  border-radius: 15px;}
+}
+
+
+
+
+
+
